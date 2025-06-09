@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pemesanan Layanan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg">
+      <h2 class="text-2xl font-bold mb-6 text-center text-yellow-500">Formulir Pemesanan</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium">Nama Lengkap</label>
+          <input type="text" placeholder="Nama Anda" class="mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Nomor Telepon</label>
+          <input type="tel" placeholder="08xxxx" class="mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Jenis Layanan</label>
+          <select class="mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required>
+            <option value="">-- Pilih Layanan --</option>
+            <option value="listrik">Perbaikan Listrik</option>
+            <option value="pipa">Perbaikan Pipa</option>
+            <option value="cat">Pengecatan</option>
+            <option value="atap">Perbaikan Atap</option>
+            <option value="renovasi">Renopasi</option>
+            <option value="pembersihan">Pembersihan</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium">Alamat</label>
+          <textarea placeholder="Alamat lengkap" rows="3" class="mt-1 block w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" required></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-yellow-400 text-black font-semibold py-2 rounded hover:bg-yellow-300">
+          Kirim Pemesanan
+        </button>
+      </form>
+
+      <div class="mt-6 text-center">
+        <a href="index.html" class="text-sm text-yellow-500 hover:underline">← Kembali ke Beranda</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
